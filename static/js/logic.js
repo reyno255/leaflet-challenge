@@ -1,16 +1,13 @@
-// Store our API endpoint inside queryUrl
-
-
 var earthquakes = new L.layerGroup();
 var tectonic  = new L.layerGroup();
-
 
 var queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
 // Perform a GET request to the query URL
 d3.json(queryUrl, function(data) {
 
-  console.log(data);
+  //console.log(data);
+
   // Once we get a response, send the data.features object to the createFeatures function
   createFeatures(data.features);
 });
@@ -18,7 +15,7 @@ d3.json(queryUrl, function(data) {
 function createFeatures(earthquakeData) {
 
   // Define a function we want to run once for each feature in the features array
-  // Give each feature a popup describing the place and time of the earthquake
+  // Give each feature a popup 
   function onEachFeature(feature, layer) {
     layer.bindPopup("<h3> Location: " + feature.properties.place +
     "<h3> <hr> Magnitude: " + feature.properties.mag +
@@ -36,12 +33,11 @@ function createFeatures(earthquakeData) {
           opacity: 1,
           fillOpacity: 0.8
         });
-        // console.log(feature.properties.mag)
       },
     onEachFeature: onEachFeature
   });
 
-  // Sending our earthquakes layer to the createMap function
+  // Sending earthquakes layer to the createMap function
   createMap(earthquakes);
 }
 
@@ -104,8 +100,8 @@ function createMap(earthquakes) {
   })
 
   // Create a layer control
-  // Pass in our baseMaps and overlayMaps
-  // Add the layer control to the map
+  // Pass in baseMaps and overlayMaps
+  // Add a layer control to the map
   L.control.layers(baseMaps, overlayMaps, {
     collapsed: false
   }).addTo(myMap);
@@ -122,7 +118,6 @@ function createMap(earthquakes) {
       for (var i = 0; i < grades.length; i++) {
           div.innerHTML +=
               '<i style="background:' + getColor(grades[i]) + '"></i>'+ grades[i]  + '<br>'
-              // grades[i] + (grades[i] ? '&ndash;' + grades[i] + '<br>' : '+');
       }
 
       return div;
