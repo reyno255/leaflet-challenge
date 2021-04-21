@@ -128,7 +128,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
           + feature.properties.place
       );
     }
-    // Add the data to the earthquake layer instead of directly to the map.
+    // Add the data to the earthquake layer instead of directly to the map
   }).addTo(earthquakes);
 
   // Then add the earthquake layer to the map
