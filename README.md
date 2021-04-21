@@ -12,7 +12,7 @@ The USGS provides earthquake data in a number of different formats, updated ever
 
 ## Results
 
-1. The circle size reflects magnitude strength of the earthquake and depth of the earthquake which is reflected by the gradient color scheme.
+1. The circle size reflects magnitude strength of the earthquake and depth of the earthquake which is reflected by the gradient color scheme. Popups allow us to quickly see information about each datapoint represented on this map.
 
 ![Map](https://github.com/reyno255/leaflet-challenge/blob/main/static/images/popup_snapshot.jpg)
 
