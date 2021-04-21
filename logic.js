@@ -168,8 +168,8 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   // Here we make an AJAX call to get our Tectonic Plate geoJSON data.
   d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json",
     function(platedata) {
-      // Adding our geoJSON data, along with style information, to the tectonicplates
 
+      // Adding our geoJSON data, along with style information, to the tectonicplates
       L.geoJson(platedata, {
         color: "orange",
         weight: 2
