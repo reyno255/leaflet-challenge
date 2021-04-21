@@ -45,9 +45,6 @@ function createFeatures(earthquakeData) {
   createMap(earthquakes);
 }
 
-
-
-
 function createMap(earthquakes) {
 
   // Define streetmap and darkmap layers
@@ -73,20 +70,21 @@ function createMap(earthquakes) {
     id: "outdoors-v11",
     accessToken: API_KEY
   });
-  // Define a baseMaps object to hold our base layers
+
+  // Define a baseMap object to hold base layers
   var baseMaps = {
     "Street Map": streetmap,
     "Satellite": satellite,
     "Outdoor": outdoor
   };
 
-  // Create overlay object to hold our overlay layer
+  // Create overlay object to hold overlay layer
   var overlayMaps = {
     Earthquakes: earthquakes,
     Tectonicplates: tectonic
   };
 
-  // Create our map, giving it the streetmap and earthquakes layers to display on load
+  // Create map, provide the streetmap and earthquake layers to display on load
   var myMap = L.map("map", {
     center: [
       37.09, -95.71
