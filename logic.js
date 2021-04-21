@@ -134,7 +134,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   // Then add the earthquake layer to the map
   earthquakes.addTo(map);
 
-  // Here we create a legend control object.
+  // Here we create a legend control object
   var legend = L.control({
     position: "bottomright"
   });
