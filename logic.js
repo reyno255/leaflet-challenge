@@ -169,7 +169,7 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   d3.json("https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json",
     function(platedata) {
 
-      // Adding geoJSON data, along with style information, to the tectonicplates
+      // Add geoJSON data to the tectonicplates
       L.geoJson(platedata, {
         color: "orange",
         weight: 2
