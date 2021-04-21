@@ -14,13 +14,11 @@ The USGS provides earthquake data in a number of different formats, updated ever
 1. The size of the circles/data markers reflects the magnitude of the earthquake and the depth of the earthquake is reflected by the colors: Earthquakes with higher magnitudes appear larger and earthquakes with greater depth appear darker in color (having a popup helps to understand the data).
 
 
-![Map](https://github.com/AliceSartori/Earthquakes_with_leaflet/blob/main/Screen%20Shot%202021-03-26%20at%2011.42.42%20AM.png)
-
-![Map](https://github.com/AliceSartori/Earthquakes_with_leaflet/blob/main/Screen%20Shot%202021-03-26%20at%2011.42.53%20AM.png)
+![Map](https://github.com/reyno255/leaflet-challenge/blob/main/static/images/popup_snapshot.jpg
 
 2. There is a strong correlation between tectonic plates movements and seismic activity and it is relatively easy to see the relationships between earthquakes and the plate boundaries on the map. Along divergent boundaries like the mid-Atlantic ridge and the East Pacific Rise, earthquakes are very common and restricted to a narrow zone close to the ridge.
 
-![Map](https://github.com/AliceSartori/Earthquakes_with_leaflet/blob/main/Screen%20Shot%202021-03-26%20at%2011.38.00%20AM.png)
+![Map](https://github.com/reyno255/leaflet-challenge/blob/main/static/images/map_snapshot.jpg)
 
 
  
